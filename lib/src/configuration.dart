@@ -45,5 +45,8 @@ class Environment {
   /// Determinate the environment path
   final String path;
 
-  const Environment({required this.name, required this.path});
+  // Determinate the environment .env path
+  final String? dotEnvPath;
+
+  const Environment({required this.name, required this.path, this.dotEnvPath});
 }
